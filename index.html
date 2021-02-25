@@ -7,6 +7,18 @@
 
 <body>
     <h2>ASA Chat 2</h2>
+    <a id="liveagent_button_online_5735Y000000LRGP" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735Y000000LRGP')">Chat Now</a>
+    <div id="liveagent_button_offline_5735Y000000LRGP" style="display: none;">Chat Unavailable</div>
+    <script type="text/javascript">
+        if (!window._laq) {
+            window._laq = [];
+        }
+        window._laq.push(function() {
+            liveagent.showWhenOnline('5735Y000000LRGP', document.getElementById('liveagent_button_online_5735Y000000LRGP'));
+            liveagent.showWhenOffline('5735Y000000LRGP', document.getElementById('liveagent_button_offline_5735Y000000LRGP'));
+        });
+    </script>
+
     <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
             background-color: #005290;
